@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página HTML</title>
+</head>
+
+<style>
+
+body
+       {
+        background-color: rgb(51, 173, 214, 0.6);
+        width: 100%;
+	    height: 100%;
+	    margin: 0;
+        }
+
+      
+     .header {
+            background-color: rgb(36, 67, 222, 0.6);
+            padding: 15px;
+            text-align: center;
+     }
+     
+  
+     
+      .footer {
+             position: relative;
+             width: 100%;
+             background: #3586ff;
+             min-height: 100px;
+             padding: 20px 50px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+           }
+
+        .social-icon,
+        .menu {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 10px 0;
+              flex-wrap: wrap;
+            }
+
+        .social-icon__item,
+        .menu__item {
+               list-style: none;
+            }
+
+        .social-icon__link {
+               font-size: 2rem;
+               color: #fff;
+               margin: 0 10px;
+               display: inline-block;
+               transition: 0.5s;
+            }
+        .social-icon__link:hover {
+               transform: translateY(-10px);
+            }
+
+        .menu__link {
+            font-size: 1.2rem;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.75;
+            font-weight: 300
+            }
+
+        .menu__link:hover {
+             opacity: 1;
+            }
+
+        .footer p {
+             color: #fff;
+             margin: 15px 0 10px 0;
+             font-size: 1rem;
+             font-weight: 300;
+            }
+     
+      .wave {
+         position: absolute;
+         top: -100px;
+         left: 0;
+         width: 100%;
+         height: 100px;
+         background: url("https://i.ibb.co/wQZVxxk/wave.png");
+         background-size: 1000px 100px;
+         }
+
+         .wave#wave1 {
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWaves 4s linear infinite;
+            }
+
+         .wave#wave2 {
+            z-index: 999;
+            opacity: 0.5;
+            bottom: 10px;
+            animation: animate 4s linear infinite !important;
+            }
+
+         .wave#wave3 {
+            z-index: 1000;
+            opacity: 0.2;
+            bottom: 15px;
+            animation: animateWaves 3s linear infinite;
+            }
+
+          .wave#wave4 {
+            z-index: 999;
+            opacity: 0.7;
+            bottom: 20px;
+            animation: animate 3s linear infinite;
+            }
+
+      @keyframes animateWaves {
+       0% {
+    background-position-x: 1000px;
+       }
+      100% {
+    background-position-x: 0px;
+       }
+    }
+
+       @keyframes animate {
+        0% {
+    background-position-x: -1000px;
+        }
+       100% {
+    background-position-x: 0px;
+       }
+    }
+
+</style>
+
+<body>
+  
+    <div class="header">
+        <h2 style="color:rgb(17, 11, 11);">
+            Curso HTML
+        </h2>
+    </div>
+     <br>
+    
+   <spam style="font-size: 20px;"><p><b> Pré-requisitos:</b></p>
+        <b>ter um notbook ou computador com acesso a internet</b></li>
+    
+
+    <spam style="font-size: 20px;"><h1> •Introdução do Curso </h1></spam>
+    <spam style="font-size: 18px;">Bom dia, Boa tarde ou Boa noite, caro Aluno!  
+    <spam style="font-size: 18px;">Apresentarei para você, como funcionará a dinâmica do nosso curso.</p><br></spam>   
+    <spam style="font-size: 18px;">Como funcionará?</spam></p>
+     
+    <spam style="font-size: 18px;">Infelizmente nem todos poderam fazer esse curso porquê o HTML5 que é a nova atualização do HTML não funciona
+    bem em dispósitivos móvel então aqueles que não tem notebook ou computador não poderar se beneficiar deste curso.</spam><br>
+    <spam style="font-size: 18px;">Esse curso será mais curto do que o curso de Python, mas em contra partida ele será bastante teórico
+    então para aqueles que forem fazer este curso, paciência.</spam>
+    <spam style="font-size: 18px;">Para começarmos, para escrever os códigos você irá prescisar utilizar ou o banco de notas
+        um decodificador de códigos com o Visual Studio Code por exemplo.</spam></p>
+    <a href="https://youtu.be/BSjdcLzgfIw?si=a2EOgTh1rXVfBKYDl">Instalando o Visual Studio Code</a>
+
+
+
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Documento html</b></spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">Um documento html possui duas partes: Head(cabeçalho), Body(corpo).
+        No head, você entra com o título da página web, que será exibido apenas na barra de endereços do navegador
+        No body, você entra com o conteúdo da página web
+        </spam></p><br>
+    
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 18px;">
+    <'html'><br>
+    <'head><br>
+        <'title'> minha primeira página <'/title> <br>
+    <'/head><br>
+    <'body'><br>
+      Hoje o dia está muito ensolarado.<br> 
+    <'/body><br>
+    <'/html></p>
+ 
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Pra aqueles que opitarem por escrever os códigos em um bloco de notas prescisão 
+        saber como salvar o arquivo para ele ser vizualizado no navegador</b><br>
+     <p ALIGN="center"><spam style="font-size: 20px;"><b>Salvar:</b></spam></p>
+     <p ALIGN="center"><spam style="font-size: 18px;">Para salvar o documento <b>html</b> gerado pelo bloco de notas é preciso colocar a extensão
+        .html
+        ( todo arquivo feito no bloco de notas é salvo com a extensão .txt e ele não é aberto nos navegadores) e 
+        colocar a codificação <b>UTF-8</b>( é a recomendação atual para codificação na web, além de ser compatível com quase todos os idiomas) 
+        por padrão os documentos criados no bloco de notas são salvos com 
+        a decodificação <b>Ansi</b> que é considerada ultrapassada por utilizar um único byte,
+         o <b>UTF-8</b> utiliza codificação multibyte</spam></p>
+     <p ALIGN="center"><spam style="font-size: 20px;"><b>< >tags:</b></spam></p>
+     <p ALIGN="center"><spam style="font-size: 18px;"> Os sinais < > permitem aos navegadores distinguir as tags de um texto comum,
+         o texto pode ser escrito com letra maiúscula e minúscula.  A maioria das tags precisam de um fechamento ele é idêntico a tag de abertura, 
+         adiciona só o sinal ( / ) no início. (As '' que seram colocadas colocadas dentros das tags serão para que
+         vocês consigam visualizar o código, sendo que eu estou escrevendo isso usam html.) </spam></p>
+    
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplos:</b></spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 18px;"><'html'> e <'/html'>: inicia e encerra um documento HTML</p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><'head'> e <'/head'>: inicia e encerra a área do cabeçalho</p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><'title'> e <'/title'>: inicia e encerra a área do corpo(conteúdo) do documento html</p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><'p'> e <'/p'>: inicia e encerra um novo parágrafo</p>
+    
+    <p ALIGN="center"><spam style="font-size: 18px;">Existem algumas tags que não necessitam de fechamento, por exemplo a tag <'br></spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><'br'> e <'/br'>: adiciona uma quebra de linha, utilizasse no final do código já escrito.</p>
+    
+    <p ALIGN="center"><spam style="font-size: 20px;"><b> Efeitos:</b></spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 18px;"><b><u>Sublinhado</u></b></spam></p>   
+    <p ALIGN="center"><spam style="font-size: 18px;">O efeito sublinhado é pouco utilizado, utilizamos
+        para que os usuários não confundam o texto destacado com links ou quando queremos destacar algum item.</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><b> Sintaxe:</b><'u><'/u> </spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 20px;">Exemplo:</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"> <'p>texto da página <'u>web</'u> </'p> texto da página <u>web</u></spam></p><br>     
+    
+    <p ALIGN="center"><spam style="font-size: 18px;"><b>Negrito</b></spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">O efeito negrito também é utilizado para chamar a atenção do leitor, utilizamos
+         ou quando queremos destacar algum item.</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><b> Sintaxe:</b><'b><'/b> </spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 20px;">Exemplo:</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"> <'p>texto da página <'b>web</'b> </'p> texto da página <b>web</b></spam></p><br>
+    
+    <p ALIGN="center"><spam style="font-size: 18px;"><b>Cor da fonte</b></spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">Para adicionar a cor ao seu texto você prescisa saber que a duas formas para isso
+    , usando o real nome da cor que você quer atribuir por exemplo:green(ao utilizar o nome da cor ela será restritiva as cores básicas),
+     mas se quiser ter uma variedade maior de cores começaremos por explicar
+    o termo rgba.</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">RGBA significa red, green, blue e alpha, sendo o corjunto de rgb atribuido as cores primárias
+    (sendo possivel alcançar mais de 16 milhões de variações de cores)
+    e aplpha a opaticidade ou o quão trasparente ou claro você quer deixar algo. Para aqueles que forem opitar de usar o bloco de notas
+    e quiserem usar o rgba basta colocar no google tabela rgba. </spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><b> Sintaxe:</b><'spam style="color:"><'/spam> </spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 20px;">Exemplo:</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"> <'p>texto da página <'spam style="color:red">web</'spam> </'p> texto da página 
+    <spam style="color:red">web</b></spam></p><br>
+    
+    <p ALIGN="center"><spam style="font-size: 18px;"><b>Alterar a fonte e o tamanho da fonte</b></spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">Para especificar o tamanho da fonte também utilizaremos a sintaxe <'spam style=";">
+    a alteração do tamanho da fonte utilazaremos o tamnho em pixels. Teoricamente pode-se escolher qualquer fonte, 
+    mas na verdade ela só aparecerá se o computador já tiver a fonte instalada.
+    Portanto, o melhor a se fazer é escolher uma fonte que já venha com o sistema operacional presentes na maioria dos computadores.Isso não
+    quer dizer que você não possa usar mais é recomendado que deixe no modo padrão, mas a exemplos de fontes que você pode usar: Fonte Arial,
+    Fonte Calibri, Fonte Comics Seans MS, Fonte Verdana, etc. Hoje em dia para mudar a fonte do seu código é presciso usar o css que é uma
+    linguagem de estilização, simplificando o seu signficado ela deixa o seu site mais bonito adicionando cores de fundo por exemplo.  </spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><b> Sintaxe:</b> <'spam style="font-size:;"></'spam></spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 20px;">Exemplo:</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"> <'p>texto da página <'spam style="font-size:20px;">web</'spam> </'p>
+    <p ALIGN="center">texto da página<spam style="font-size: 20px;">  web</spam></p><br>
+    
+    <p ALIGN="center"><spam style="font-size: 18px;"><b>Alinhamento do texto</b></spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">Para destacar o texto, além de efeitos, pode-se alterar a linha ou o parágrafo. 
+    Os alinhamentos disponíveis são: Para a direita( padrão), esquerda, centralizado e justificado.
+    <p ALIGN="center"><spam style="font-size: 18px;"><b> Sintaxe:</b><'p ALIGN=""><'/p> </spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 20px;">Exemplo:</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"> <'p ALIGN="left>texto da página web </'p> 
+        <p ALIGN="left">texto da página web</p></spam></p><br>
+    
+     
+    <p ALIGN="center"><spam style="font-size: 18px;"><b>Inserindo linhas horizontais:</b></spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">Você usará essas linhas para dividir a informação em diferentes blocos.</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><b> Sintaxe:</b><'hr></spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 20px;">Exemplo:</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"> <'p>texto da página</'p> <'hr>web </'p> 
+    <hr><p ALIGN="center">texto da página web</p></spam></p><br> 
+
+
+    <p ALIGN="center"><spam style="font-size: 18px;"><b>Criando subtítulos:</b></spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">Para isso usaremos a tag </'hx> sendo que "x" é o número que representa o nível do tópico.</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"><b> Sintaxe:</b><'hx><'/hx></spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 20px;">Exemplo:</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"> <'h1>texto da página web<'/h1>
+    <h1><p ALIGN="center">texto da página web</h1></p></spam></p><br> 
+    
+
+    <p ALIGN="center"><spam style="font-size: 18px;"><b>Tag performatted:</b></spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">Por padrão, os navegadores não exibem os espaços extras e linhas em branco.
+        Observe,no texto abaixo, não hà espaços que fiz no início da segunda e quarta linhas para diferencias os versos da música Pastorinhas, 
+        de Noel Rosa.</spam></p> <br>
+   
+        <p ALIGN="center"><spam style="font-size: 18px;">
+            A estrela d'alva no céu desporta
+            E lua anda tonta com tamanho esplendor
+        E pastorinhas pro consolo da lua 
+            Vão cantando na rua lindos versos de amor.
+        </spam></p><br>
+    
+    <p ALIGN="center"><spam style="font-size: 18px;">Para que o usuário visualize a
+        página web com os espaços e linhas que você definiu no documento html. É necessário usar a tag performatted (pré- formatado).
+    <p ALIGN="center"><spam style="font-size: 18px;"><b> Sintaxe:</b><'pre><'/pre></spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 20px;">Exemplo:</spam></p>
+    <p ALIGN="center"><spam style="font-size: 18px;">
+          <pre>
+          A estrela d'alva no céu desporta
+            E lua anda tonta com tamanho esplendor
+        E pastorinhas pro consolo da lua 
+            Vão cantando na rua lindos versos de amor.
+        </spam></pre></p>
+    
+    <p ALIGN="center"><spam style="font-size: 18px;">Para aqueles que quiserem aprofundar o seu aprendizado nesse
+         link tem uma playlist de videos no youtube.
+        <a href="https://youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&si=yGF29V27YL4nsfQO">Playlist</a><br></spam></p>
+    
+
+    
+
+
+
+
+  
+
+
+
+
+
+        
+       
+    
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+     <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        
+        <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+      </footer>
+      
+</body>
+</html>

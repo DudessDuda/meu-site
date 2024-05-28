@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Python</title>
+</head>
+
+<style>
+
+body
+    {
+        background-color: rgb(51, 173, 214, 0.6);
+        width: 100%;
+	    height: 100%;
+	    margin: 0;
+     }
+
+
+
+     .header {
+            background-color: rgb(36, 67, 222, 0.6);
+            padding: 15px;
+            text-align: center;
+     }
+     
+        
+      .footer {
+             position: relative;
+             width: 100%;
+             background: #3586ff;
+             min-height: 100px;
+             padding: 20px 50px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+           }
+
+        .social-icon,
+        .menu {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 10px 0;
+              flex-wrap: wrap;
+            }
+
+        .social-icon__item,
+        .menu__item {
+               list-style: none;
+            }
+
+        .social-icon__link {
+               font-size: 2rem;
+               color: #fff;
+               margin: 0 10px;
+               display: inline-block;
+               transition: 0.5s;
+            }
+        .social-icon__link:hover {
+               transform: translateY(-10px);
+            }
+
+        .menu__link {
+            font-size: 1.2rem;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.75;
+            font-weight: 300
+            }
+
+        .menu__link:hover {
+             opacity: 1;
+            }
+
+        .footer p {
+             color: #fff;
+             margin: 15px 0 10px 0;
+             font-size: 1rem;
+             font-weight: 300;
+            }
+     
+      .wave {
+         position: absolute;
+         top: -100px;
+         left: 0;
+         width: 100%;
+         height: 100px;
+         background: url("https://i.ibb.co/wQZVxxk/wave.png");
+         background-size: 1000px 100px;
+         }
+
+         .wave#wave1 {
+            z-index: 1000;
+            opacity: 1;
+            bottom: 0;
+            animation: animateWaves 4s linear infinite;
+            }
+
+         .wave#wave2 {
+            z-index: 999;
+            opacity: 0.5;
+            bottom: 10px;
+            animation: animate 4s linear infinite !important;
+            }
+
+         .wave#wave3 {
+            z-index: 1000;
+            opacity: 0.2;
+            bottom: 15px;
+            animation: animateWaves 3s linear infinite;
+            }
+
+          .wave#wave4 {
+            z-index: 999;
+            opacity: 0.7;
+            bottom: 20px;
+            animation: animate 3s linear infinite;
+            }
+
+      @keyframes animateWaves {
+       0% {
+    background-position-x: 1000px;
+       }
+      100% {
+    background-position-x: 0px;
+       }
+    }
+
+       @keyframes animate {
+        0% {
+    background-position-x: -1000px;
+        }
+       100% {
+    background-position-x: 0px;
+       }
+    }
+
+
+
+</style>
+<body>
+    
+
+    <div class="header">
+        <h2 style="color:rgb(17, 11, 11);">
+           Curso Python
+        </h2>
+    </div>
+     <br>
+    
+  
+    <spam style="font-size: 20px;"><h1> •Introdução do Curso </h1></spam>
+    <spam style="font-size: 18px;">Bom dia, Boa tarde ou Boa noite, caro Aluno!</p><br></spam><br>   
+    <spam style="font-size: 18px;">Apresentarei para você, como funcionará a dinâmica do nosso curso.</p><br></spam>   
+    <spam style="font-size: 18px;">Como funcionará?</spam></p>
+    <spam style="font-size: 18px;">Nossa curso vai funcionar na forma de textos, então você vai precisar ler bastante para aprender o conteúdo que será 
+        apresentado, então preparasse para ler. 
+        Também é importante você saber que para colocarmos os projetos do python para funcionar e você conseguir ver o que você está fazendo, você precisará baixar o python. Existem duas maneiras de fazermos isso, que são pelo computador e pelo celular, mas no nosso caso, usaremos o 
+        aplicativo no celular. O aplicativo em questão é o <b>Pydorid</b>, que na minha opinião, é o melhor 
+        aplicativo para programar python no celular, então por favor, baixe esse 
+        aplicativo no seu celular para uma melhor experiência durante o curso. E para s pessoas que tem um notebook
+        recomendo a instalação do Visual Studio Code.
+        </spam></p>
+    <spam style="font-size: 20px;"><b>Exercícios</b></spam></p>
+    <spam style="font-size: 18px;">Neste curso, a cada fim de módulo, você fará um exercício para colocar em prática tudo que você aprender nele. Mas mesmo sem exercícios, você ainda pode praticar. Com os exemplos que serão mostrados, 
+    você poderá modificar as informações dos códigos e aplicar o mesmo código com vários contextos diferentes, 
+    basta usar a sua criatividade.</p></spam>
+
+    <a href="https://play.google.com/store/apps/details?id=ru.iiec.pydroid3">Pydorid</a><br>
+    <a href="https://youtu.be/BSjdcLzgfIw?si=a2EOgTh1rXVfBKYDl">Instalando o Visual Studio Code</a>
+
+
+
+  <spam style="font-size: 20px;"><h1> •Lógica dentro da programação </h1></spam>
+  <spam style="font-size: 18px;">Bom dia, Boa tarde ou Boa noite, caro Aluno!, Estão prontos? Vamos lá.</p><br></spam><br> 
+  <spam style="font-size: 18px;">A lógica na programação funciona de forma bem simples, aposto que você vai aprender bem rápido. 
+    Basicamente o computador (no nosso caso o celular) é bem burro, então para que possamos programar nele, 
+    precisamos entender que um código é como uma receita de bolo que explica detalhadamente como o fazer. 
+    Na programação é um pouco diferente, para você conseguir dar uma instrução para sua máquina, 
+    você precisa saber os comandos específicos para ele fazer determinada ação. 
+    Então imagine que você está ensinando algo novo para uma criança, 
+    creio que você precisará de bastante paciência e uma explicação bem detalhada, e na programação também é assim, 
+    seu computador ou celular não sabe de nada, mas quando você digita um comando na ordem certa,
+    ele executará perfeitamente, porém, vale lembrar que se você apaga o código, 
+     você terá que reescreve-lo para ele executar uma ação novamente.</spam>
+    
+    
+    <spam style="font-size: 20px;"><h1>•Introdução ao Python</h1></spam>
+    <spam style="font-size: 18px;">Bom dia, Boa tarde ou Boa noite, caro Aluno!
+       Ansiosos para começar a estudar? Ótimo, vamos lá!</p><br></spam>
+    <hr>
+    <p ALIGN="center"><b><spam style="font-size: 25px;">Sintaxe</b></p></spam>
+   
+    <P ALIGN="center"><spam style="font-size: 18px;">
+        Antes de começar a estudar de verdade, preciso esclarecer uma coisa à você. Antes de você aprender qualquer coisa pratica, 
+        você primeiro precisa de uma base teórica. Na programação não é diferente, antes de aplicar um comando, 
+        você precisa primeiro saber a sintaxe dele.
+        Comando: É uma forma representativa do que você vai pedir para o computador fazer.
+        Sintaxe: É a estrutura do programa. 
+        Agora que você tem essa base, posso apresentar os comandos  a você.
+        O comando mais básico e o primeiro que ensinarei a você serve para mostrar uma palavra, frase, 
+        texto e outras coisas que veremos mais para frente no curso. O comando em específico é o print.
+    </spam></P><BR>
+    
+    <P ALIGN="center"><spam style="font-size: 25px;"><b>A sintaxe desse comando é:</b></spam></P><BR>
+    <p ALIGN="center"><span style="color: rgba(35, 120, 45, 0.6)"><spam style="font-size: 18px;"><b>print</b></spam> ('x')</p><br>
+    <p ALIGN="center"><spam style="font-size: 18px;">(O "X" apresentado nessa sintaxe seria o assunto apresentado por você.)</spam></p>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <p ALIGN="center"><span style="color: rgba(35, 120, 45, 0.6)"><spam style="font-size: 18px;"><b>print</b></span> ('Olá mundo')</p><spam></p><br>
+    <p ALIGN="center"><spam style="font-size: 18px;">
+        Quando você tentar executar o este código, aparecerá apenas o <b>"Olá mundo"</b>, pois o print apenas mostra o que está dentro dele, 
+        então ele não precisa aparecer. 
+        No geral, nada aparecerá no seu programa se não existir um print no código, ele é essêncial para que ele funcione. 
+        Agora vá praticar e colocar o que você aprendeu aqui em prática, se você não fizer isso, não aprenderá nada.  
+    </spam></p><br>
+    
+    <p ALIGN="center"><spam style="font-size: 18px;">No geral, nada aparecerá no seu programa se não existir um print no código, 
+        ele é essêncial para que ele funcione. 
+        Agora vá praticar e colocar o que você aprendeu aqui em prática, se você não fizer isso, não aprenderá nada. 
+        </spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 25px;"><b>Variaveis</b></spam></P><BR>
+        <P ALIGN="center"><spam style="font-size: 18px;"> Agora, sem muita enrolação, vamos aprender do que se trata as <b>variáveis</b>. 
+            As variáveis são como pequenas caixas de armazenamento que são "guardadas" dentro da memória do seu computador. 
+        </spam></P><BR>
+
+    <P ALIGN="center"><spam style="font-size: 25px;"><b>A sintaxe é:</b></spam></P>
+    <p ALIGN="center"><spam style="color: rgba(9, 4, 91, 0.6)" style="font-size: 18px;"><b>a</b></spam>=<spam style="color: rgba(91, 4, 19, 0.6)" style="font-size: 18px;">x</spam></p><br></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"> (Nesse caso, a letra "a" representa a variável que foi criada,
+         já o "X" representa o conteúdo que foi armazenado dentro da variável.)</spam></p><br>
+    
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <p ALIGN="center"><span style="color: rgba(9, 4, 91, 0.6)" style="font-size: 18px;"><b>nota</b></spam>=<spam style="color: rgba(91, 4, 19, 0.6)" style="font-size: 18px;">9</span></p><br></p>
+    <p ALIGN="center"><spam style="font-size: 18px;"> Agora, você tem uma variável com um valor embutido, mas como foi dito anteriormente, nada
+        aparecerá no programa se não haver um <b>print</b>.</spam></p>
+
+    <P ALIGN="center"><spam style="font-size: 18px;">(Antes de continuar, é importante avisar para você não declarar uma variável com números, 
+        letras maiúsculas e sinais.)</spam>
+    <P ALIGN="center"><spam style="font-size: 18px;">Então para você visualizar o número que está dentro da variável, você precisará escrever
+         o seguinte comando:</spam></P><br>
+    <p ALIGN="center"><spam style="color: rgba(35, 120, 45, 0.6)" style="font-size: 18px;"><b>print</b></spam>=<spam style="color: rgba(9, 4, 91, 0.6)" style="font-size: 18px;">nota</span></p><br></p>
+    
+    <P ALIGN="center"><spam style="font-size: 18px;"> Note que você não precisa escrever o 9, pois colocando apenas o nome da <b>variável</b>,
+         será mostrado todo conteúdo embutido nela. Também não é necessário usar as aspas simples, 
+         pois elas servem apenas para escrita de textos, aquilo que não for um texto, não se coloca dentro aspas, caso você faça isso,
+         não funcionará, pois a <b>variável</b>, ou qualquer outra coisa que não seja um texto, será apresentado como um texto. 
+         Se você quiser apresentar um texto onde no meio dele esteja um valor de uma variável que você criou, 
+         você pode usar a seguinte sintaxe: </spam></P><br>
+    
+    <p ALIGN="center"><span style="color: rgba(9, 4, 91, 0.6)" style="font-size: 18px;"><b>a</b></spam>=<spam style="color: rgba(35, 120, 45, 0.6)" style="font-size: 18px;">x</span></p><br></p>
+    <p ALIGN="center"><span style="color: rgba(35, 120, 45, 0.6)" style="font-size: 18px;"><b>print</b></spam>=('y'<spam style="color: rgba(91, 4, 19, 0.6)" style="font-size: 18px;">a</span>)</p><br></p> 
+    
+    <P ALIGN="center"><spam style="font-size: 18px;"> <b>a</b> = variável </spam></P>
+    <P ALIGN="center"><spam style="font-size: 18px;"> <b>x</b> = valor da variável </spam></P>
+    <P ALIGN="center"><spam style="font-size: 18px;"> <b>y</b> = texto </spam></P><br>
+
+    <P ALIGN="center"><spam style="font-size: 18px;"> (Note que o "y" que é o texto, está entre aspas simples a <b>variável</b> está fora,
+         e entre eles, há uma vírgula.
+         O <b>print</b> consegue mostrar os valores entre as aspas e fora, mas a vírgula é necessária para que o programa não dê erro.)</spam></P><br>
+    
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <p ALIGN="center"><span style="color: rgba(9, 4, 91, 0.6)" style="font-size: 18px;"><b>nota</b></span>=<span style="color: rgba(35, 120, 45, 0.6)" style="font-size: 18px;">9</span></p><br></p>
+    <P ALIGN="center"><spam style="font-size: 18px;">E então, no seu programa aparecerá "Sua nota é 9". 
+        Porém, esse é muito complicado de fazer, então mostrarei uma forma mais fácil de colocar uma variável dentro de um print.</spam></P>
+    <P ALIGN="center"><spam style="font-size: 25px;"><b>A sintaxe é:</b></spam></P><br>
+    <p ALIGN="center"><span style="color: rgba(9, 4, 91, 0.6)" style="font-size: 18px;"><b>nota</b></spam>=<spam style="color: rgba(35, 120, 45, 0.6)" style="font-size: 18px;">5</span></p><br></p>
+    <p ALIGN="center"><span style="color: rgba(35, 120, 45, 0.6)" style="font-size: 18px;"><b>print</b></spam>=(f<spam style="color: rgba(91, 4, 19, 0.6)" style="font-size: 18px;">'texto{nota}'</span>)</p><br></p>
+    <P ALIGN="center"><spam style="font-size: 18px;">Neste comando, o "f" serve para o computador entender que entender que dentro das chaves,
+         irá ser colocado uma <b>variável</b>,
+         sem esse "f" o <b>print</b> não mostrará o conteúdo da <b>variável</b>, e sim as chaves com o nome da variável dentro.</spam></P><br>
+    
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <p ALIGN="center"><span style="color: rgba(9, 4, 91, 0.6)" style="font-size: 18px;"><b>nota</b></spam>=(f <spam style="color: rgba(91, 4, 19, 0.6)" style="font-size: 18px;">8</span>)</p><br></p>
+    <p ALIGN="center"><span style="color: rgba(35, 120, 45, 0.6)" style="font-size: 18px;"><b>print()</b></spam>(<spam style="color: rgba(91, 4, 19, 0.6)" style="font-size: 18px;">'f sua nota é {nota}</span>)</p><br></p>
+    <P ALIGN="center"><spam style="font-size: 18px;">Esse comando também é muito útil caso você queira colocar uma variável entre o texto.</spam></P>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;">din =25</spam></p>
+    <P ALIGN="center"><spam style="font-size: 18px;"></spam></p>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam><spam style="color: rgba(91, 4, 19, 0.6)">(f'Você tem {din} reais')</spam><br> 
+    <P ALIGN="center"><spam style="font-size: 18px;">Dessa forma, seus programas ficam mais flexíveis e mais rápido de escrever.</spam></P><br>
+    <P ALIGN="center"><spam style="font-size: 18px;">Outro comando que é bastante útil é o input. O input trabalha junto com a variável,
+         mas funciona como um print, pois ele permite você implementar um texto para que você consiga "pedir" um valor para a sua variável, 
+         assim você pode armazenar o que você quiser, e a variável não precisaria ter um valor fixo. .</spam></P><br>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <p ALIGN="center"><span style="color: rgba(9, 4, 91, 0.6)" style="font-size: 18px;"><b>din</b></spam>=<spam style="color: rgba(230, 111, 19, 0.6)">input</spam>('Qual o valor que tem na sua conta: ')</p><br></p>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam><spam style="color: rgba(91, 4, 19, 0.6)">(f'Você tem {din} reais')</spam><br> 
+    <P ALIGN="center"><spam style="font-size: 18px;">  Esse texto que está embutido na variável, não é um valor atribuído à ela, 
+         mas sim uma forma de fazer você guardar o que você quiser guardar nela,
+         por isso geralmente, se usa um texto pedindo ou perguntando algo, e o que você responder, será guardado na variável.</spam></P>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exercício:</b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;"><b>Crie uma variável que receba a idade de uma pessoa. Depois mostre uma mensagem de parabéns pela idade dele.</b></spam></P>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Resolução:</b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">idade</spam>=(<spam style="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'Me diga sua idade:</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">f'Parabéns, você tem {idade} anos.</spam>)<br> 
+   
+     <hr>
+     <spam style="font-size: 20px;"><h1> •Conhecendo mais o Python</h1></spam>
+     <spam style="font-size: 18px;">Bom dia, Boa tarde ou Boa noite, Alunos!</p><br></spam>
+     <spam style="font-size: 18px;"> Agora que sabemos o básico e um pouco mais das variáveis,
+         podemos avançar, aprenderemos mais uma função que acompanha as variáveis, e depois vamos a parte divertida de programar. </p><br></spam>
+    <hr>  
+     <p ALIGN="center"><b><spam style="font-size: 25px;">Classificação de variáveis </b></p></spam>
+     <P ALIGN="center"><spam style="font-size: 18px;">A classificação de variável vai dizer que tipo de dados a variaveilvai receber, 
+        se vai ser número inteiro, número decimal ou string (texto). No python há mais tipos de dados, mas como este curso é básico,
+         aprenderemos apenas esses três tipos. 
+        Os três tipos de classificação dos dados são <b>int</b>, <b>str</b> e <b>float</b>. A sintaxe é: <b>a = Classificação(input('Texto'))</b>
+    </spam></P><br>
+
+    <P ALIGN="center"><spam style="font-size: 18px;">int: O tipo de classificação <b>int</b> recebe os números inteiros. </spam></P>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">num</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">int</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'Digite um número: '</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;"> Essa é a forma que você usa as classificações, sempre antes do <b>input</b>
+        (vale lembrar que você terá que abrir um novo parêntese também) </spam></P>
+    <P ALIGN="center"><spam style="font-size: 18px;"> str: O tipo de classificação <b>str</b> recebe textos. </spam></P>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">a</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">str</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite seu nome: '</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;"></spam>float: O tipo de classificação <b>float</b>é usado para receber números decimais (mas também recebe inteiro).</P>
+    
+    <hr>
+    <p ALIGN="center"><b><spam style="font-size: 25px;">Classificação de variáveis </b></p></spam>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b> Operadores Númericos </b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;"> Os operadores numéricos, como sabemos, é um sinal de matemática que fazem os números
+        somarem, subtrairem, etc. E no python também há operadores numéricos, porém, alguns sinais são diferentes.</spam></P>
+
+     <P ALIGN="center"><spam style="font-size: 18px;"> + Soma </spam></P>
+     <P ALIGN="center"><spam style="font-size: 18px;"> - Subtração </spam></P>
+     <P ALIGN="center"><spam style="font-size: 18px;">  * Multiplicação </spam></P>
+     <P ALIGN="center"><spam style="font-size: 18px;"> / Divisão </spam></P><br>
+
+     <P ALIGN="center"><spam style="font-size: 18px;">De novo, existem mais operadores no python, mas trabalharemos apenas com esses. 
+        Então, agora que aprendemos quais são os sinais dos operadores, podemos mostrar alguns exemplos e fazermos o exercício do módulo. 
+     </spam></P>
+
+     <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">n1</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">float</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite um número: '</spam>) )<br> 
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">n2</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">float</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite outro número: '</spam>) )<br> 
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">soma</spam>=<spam style="color: rgba(91, 4, 19, 0.6)">n1+n2</spam></P><br> 
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">sub</spam>=<spam style="color: rgba(91, 4, 19, 0.6)">n1-n2</spam></P><br> 
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">mult</spam>=<spam style="color: rgba(91, 4, 19, 0.6)">n1*n2</spam></P><br> 
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">div</spam>=<spam style="color: rgba(91, 4, 19, 0.6)">n1/n2</spam></P><br> 
+
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">f'A soma dos números é {soma}'</spam>)<br> 
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">f'A subtração dos números é {sub}'</spam>)<br> 
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">f'A multiplicação dos números é {mult}'</spam>)<br> 
+     <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">f'A divisão dos números é {div}'</spam>)<br> 
+
+    <P ALIGN="center"><spam style="font-size: 18px;">É importante você saber que você sempre deve usar o <b>float</b>
+            se for usar os números para cálculos (por precaução, pois se há uma possibilidade do 
+            resultado ser um número decimal, então você deve usar ele) </P></spam>
+     
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;"> É importante você saber que você sempre deve usar o <b>float</b> se for usar os números para cálculos 
+        (por precaução, pois se há uma possibilidade do resultado ser um número decimal, então você deve usar ele) </spam>
+    <P ALIGN="center"><spam style="font-size: 18px;"> Crie um programa que receba o nome de um aluno e 4 notas dele. 
+        Após isso faça a média desse aluno e mostre essa média. 
+        Resolução: </spam></P>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Resolução:</b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">nome</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">str</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite seu nome: '</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">nt1</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">int</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite sua primeira nota:'</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">nt2</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">int</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite sua segunda nota:'</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">nt3</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">int</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite sua terceira nota:'</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">nt4</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">int</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite sua quarta nota: '</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">media</spam>=(<spam style="color: rgba(91, 4, 19, 0.6)">(nt1+nt2+nt3+nt4) / 4 </spam>)<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">(f'Parabéns {nome}, sua média é {media}.') </spam>)<br> 
+
+    <hr>
+    <p ALIGN="left"><b><spam style="font-size: 25px;"> •Complemento Final  </b></p></spam>
+    <P ALIGN="left"><spam style="font-size: 18px;">Bom Dia, Boa tarde ou Boa noite, Alunos! 
+        Finalmente estamos no último módulo do curso. Sem enrolação e, vamos lá.  </spam></P>
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Condições</b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;"> A última coisa que precisamos aprender neste curso básico são as condições. 
+        As condições permitem que você crie dois caminhos para algum resultado que você obtiver com seu programa.  </spam></P>
+
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <P ALIGN="left"><spam style="font-size: 18px;"><b> Você descobre a média de um aluno, se a média for igual ou maior que 6, ele passa de ano, mas se ele tirar menos que isso, ele fica de recuperação. 
+        Para usarmos essas condições, usaremos o if elif e else.</b></spam></P><br>
+    
+    <P ALIGN="center"><spam style="font-size: 18px;"> Para usarmos essas funções é bem simples. Aqui vai a <b>sintaxe:</b> </spam></P>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">if</spam>(1° resultado):</P>
+    <P ALIGN="center"><spam style="font-size: 18px;"> Primeira condição</spam></P><br>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(94, 27, 84, 0.6)">elif</spam>(2° resultado):</P>
+    <P ALIGN="center"><spam style="font-size: 18px;"> Segunda condição </spam></P><br>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">else:</spam> Mensagem caso não seja nenhuma das condições</P>
+
+
+    <p ALIGN="center"><spam style="font-size: 20px;"><b>Exemplo:</b></spam></p><br>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">nt1</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">int</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite sua primeira nota:'</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">nt2</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">int</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite sua segunda nota:'</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">nt3</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">int</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite sua terceira nota:'</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">nt4</spam>=<spam style="color: rgba(9, 4, 91, 0.6)">int</spam>(<span style ="color: rgba(230, 111, 19, 0.6)">input</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">'('Digite sua quarta nota:'</spam>) )<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">media</spam>=(<spam style="color: rgba(91, 4, 19, 0.6)">(nt1+nt2+nt3+nt4) / 4 </spam>)<br>  
+
+
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">if</spam><P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">media</spam> >=6:</P>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">f'Parabéns sua média é {media} e você passou.' </spam>)<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(94, 27, 84, 0.6)">elif</spam>= 6:</P>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">f'Vocé não atingiu a média nescessária.' </spam>)<br> 
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(9, 4, 91, 0.6)">else:</spam>
+    <P ALIGN="center"><spam style="font-size: 18px;" style="color: rgba(35, 120, 45, 0.6)">print</spam>(<spam style="color: rgba(91, 4, 19, 0.6)">Você não colocou números, responda as perguntas novamente.'</spam>)</P>
+    <P ALIGN="center"><spam style="font-size: 18px;"> Você pode usar as condições pra várias situações,
+         isso foi apenas um exemplo, mas se você for criativo, você consegue usar as condições para situações diversas.</spam>
+     
+    <p ALIGN="left"><b><spam style="font-size: 25px;"><b> •Projeto Final </b></p></spam>
+    <P ALIGN="center"><spam style="font-size: 18px;"><b> Crie um programa que receba o nome, a idade, CPF de um aluno e as quatro notas de suas bimestrais. 
+        Depois faça um tipo de ficha mostrando os dados que foram retirados dele e mostre a média dele. 
+        Se o aluno tirar 6 ou mais, ele passa de ano, se não, ele reprova.
+        </b></spam>
+    <P ALIGN="center"><spam style="font-size: 18px;"><a href="pyfarmcursos@gmail.com"><b>Clique aqui para enviar o seu projeto final
+    </b></a></spam></P><br><br><br><br><br><br><br>
+  
+        
+     
+
+
+
+
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+
+
+       
+        <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+      </footer>
+      
+
+
+</body>
+</html>
